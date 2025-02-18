@@ -7,6 +7,10 @@
         <value xsi:type="xsd:string">https://curious-otter-egwpvw-dev-ed.trailblaze.lightning.force.com</value>
     </values>
     <values>
+        <field>Max_Retries__c</field>
+        <value xsi:type="xsd:double">1.0</value>
+    </values>
+    <values>
         <field>Slack_Bot_Token__c</field>
         <value xsi:type="xsd:string">xoxb-8436630429779-8460504003952-EHId50I5DuDtUk7jwRl4IpBJ</value>
     </values>
