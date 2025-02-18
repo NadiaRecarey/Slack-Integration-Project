@@ -111,9 +111,7 @@ public with sharing class CaseSlackNotifierQueueable implements Queueable, Datab
         request.setHeader('Authorization', 'Bearer ' + slackBotToken);
         request.setBody('{"channel": "' + channelId + '", "text": "' + text + '"}');
 
-        System.debug(JSON.serializePretty(request.getBody()));
         HttpResponse response = new Http().send(request);
-        System.debug(JSON.serializePretty(response.getBody()));
 
         if (response.getStatusCode() != 200) {
             throw new CalloutException('Error sending Slack message: ' + response.getBody());
